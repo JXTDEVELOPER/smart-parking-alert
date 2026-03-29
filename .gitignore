@@ -1,0 +1,13 @@
+# Global ignores
+node_modules/
+.DS_Store
+
+# Security overrides (Never commit these!)
+.env
+.env.*
+!.env.example
+serviceAccountKey.json
+
+# Build outputs
+/frontend/dist/
+/firebase-debug.log

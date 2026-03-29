@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Security overrides (Critical Backend Authentication)
+.env
+.env.*
+!.env.example
+serviceAccountKey.json
+*serviceAccountKey*.json
+
+# Optional npm cache error logs
+.npm/
+
+# OS Files
+.DS_Store
+Thumbs.db
