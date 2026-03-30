@@ -17,7 +17,7 @@ const char *WIFI_PASSWORD = "12345678";
 // --- Backend API ---
 // IMPORTANT: Replace 192.168.X.X with your computer's local IPv4 address (same LAN as the ESP32).
 // Example: run `ipconfig` (Windows) or `ip addr` / `ifconfig` (Linux/macOS) and use the Wi‑Fi IPv4.
-const char *BACKEND_SCAN_URL = "http://10.87.210.208:5000/api/esp32/scan";
+const char *BACKEND_SCAN_URL = "http://10.101.193.208:5000/api/esp32/scan";
 
 // --- MFRC522 on ESP32 WROOM (SPI) ---
 // Typical VSPI mapping; SS and RST as specified.

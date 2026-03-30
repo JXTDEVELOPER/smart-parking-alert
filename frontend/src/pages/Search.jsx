@@ -68,10 +68,13 @@ export default function Search() {
     setAlertMessage(null);
     
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://unextendible-felipe-nonexcusably.ngrok-free.dev';
       const res = await fetch(`${backendUrl}/api/alerts/send`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': '69420'
+        },
         body: JSON.stringify({
           phoneNumber: searchResult.phone_number,
           plateNumber: searchResult.display_plate
